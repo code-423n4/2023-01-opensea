@@ -43,14 +43,14 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 ---
 
 # OpenSea SeaPort contest details
-- Total Prize Pool: $98,900
-  - HM awards: $70,890 
-  - QA report awards: $8,340 
-  - Gas report awards: $4,170 
-  - Judge + presort awards: $15,000 
+- Total Prize Pool: $100,500 USDC
+  - HM awards: $85,000 USDC
+  - QA report awards: $8,500 USDC
+  - Gas report awards: $5,000 USDC
+  - Judge + presort awards: $15,000 USDC
   - Scout awards: $500 USDC 
 - Join [C4 Discord](https://discord.gg/code4rena) to register
-- Submit findings [using the C4 form](https://code4rena.com/contests/2023-01-opensea-contest/submit)
+- Submit findings [using the C4 form](https://code4rena.com/contests/2023-01-opensea-seaport-contest/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
 - Starts January 06, 2023 20:00 UTC
 - Ends January 16, 2023 20:00 UTC
