@@ -61,7 +61,7 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 
 ---
 
-# OpenSea contest details
+# OpenSea SeaPort contest details
 - Total Prize Pool: $100,000
   - HM awards: XXX XXX (Notion Field: Main Pool)
   - QA report awards: XXX XXX (Notion Field: QA Pool, usually 10% of total award pool)
