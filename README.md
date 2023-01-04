@@ -52,8 +52,8 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 - Join [C4 Discord](https://discord.gg/code4rena) to register
 - Submit findings [using the C4 form](https://code4rena.com/contests/2023-01-opensea-seaport-contest/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
-- Starts January 06, 2023 20:00 UTC
-- Ends January 16, 2023 20:00 UTC
+- Starts January 13, 2023 20:00 UTC
+- Ends January 23, 2023 20:00 UTC
 
 **IMPORTANT NOTE**: Unlike most public Code4rena contests, prior to receiving payment from this contest you MUST become a Certified Warden (successfully complete KYC). You do not have to complete this process before competing or submitting bugs. **You must have started this process within 48 hours after contest close, i.e. by January 18, 2023 at 20:00 UTC in order to receive payment.**
 
