@@ -52,7 +52,7 @@ git clone --recurse-submodules https://github.com/code-423n4/2023-01-opensea.git
 ```
 - Getting the submodules if cloning was done without `--recurse-submodules`:
 ```bash
-git submodule update --init
+git submodule update --init --recursive
 ```
 
 # Overview
