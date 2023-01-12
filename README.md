@@ -1,4 +1,4 @@
-![Seaport](img/Seaport-banner.png)
+![Seaport](https://github.com/ProjectOpenSea/seaport/raw/1.2/img/Seaport-banner.png)
 
 [![Version][version-badge]][version-link]
 [![Test CI][ci-badge]][ci-link]
@@ -12,6 +12,7 @@
 ---
 
 # OpenSea SeaPort contest details
+
 - Total Prize Pool: $100,500 USDC
   - HM awards: $85,000 USDC
   - QA report awards: $8,500 USDC
@@ -32,10 +33,10 @@ The C4audit output for the contest can be found [here](add link to report) withi
 
 *Note for C4 wardens: Anything included in the C4udit output is considered a publicly known issue and is ineligible for awards.*
 
- - Cross-domain reentrancy between zones, contract offerers, token contracts, distinct instances of Seaport or other marketplaces, or other external contracts, or view-only reentrancy on functions such as getOrderStatus or getContractOffererNonce, is "publicly known"
- - Lack of ERC721 safeTransferFrom usage in the transfer helper and on conduits is "publicly known"
- - interaction with non-compliant or malicious ERC20/ERC721/ERC1155 implementations not considered in scope
- - also see Seaport 1.1 out of scope / known limitations section: https://github.com/code-423n4/2022-05-opensea-seaport#out-of-scope
+- Cross-domain reentrancy between zones, contract offerers, token contracts, distinct instances of Seaport or other marketplaces, or other external contracts, or view-only reentrancy on functions such as getOrderStatus or getContractOffererNonce, is "publicly known"
+- Lack of ERC721 safeTransferFrom usage in the transfer helper and on conduits is "publicly known"
+- interaction with non-compliant or malicious ERC20/ERC721/ERC1155 implementations not considered in scope
+- also see Seaport 1.1 out of scope / known limitations section: <https://github.com/code-423n4/2022-05-opensea-seaport#out-of-scope>
 
 # Overview
 
@@ -47,12 +48,12 @@ Gas optimizations that do not otherwise modify behavior or adversely impact safe
 
 # Scope
 
- - contracts/Seaport.sol
- - contracts/lib/*
- - contracts/helpers/PointerLibraries.sol
- - contracts/interfaces/*
- - contracts/conduit/* (with the assumption that only Seaport v1.2 will be added as a channel)
- - reference/* (only considered for informational issues)
+- contracts/Seaport.sol
+- contracts/lib/*
+- contracts/helpers/PointerLibraries.sol
+- contracts/interfaces/*
+- contracts/conduit/* (with the assumption that only Seaport v1.2 will be added as a channel)
+- reference/* (only considered for informational issues)
 
 ## Out of scope
 
@@ -66,16 +67,18 @@ Gas optimizations that do not otherwise modify behavior or adversely impact safe
 # Additional Context
 
 Seaport v1.2 builds on Seaport v1.1 with the following new characteristics:
+
 - Contract orders do not have a signature, and instead are generated at the time of fulfillment by the contract order's offerer upon a stateful call to `generateOrder` from Seaport. The generated order must adhere to the requirements laid out by the fulfiller, namely that all of the designated offer item amounts, or greater, are returned as the offer and that all of the designated consideration item amounts, or less, are returned as the consideration. Seaport will also make a stateful call to `ratifyOrder` on the contract offerer after all transfers have been completed and must receive back the correct magic value. See the contract offerer interface for more details.
 - Bulk signatures allow for signing multiple orders at once, and are fulfilled by providing the bulk signature, an index of the order being fulfilled, and a merkle proof that the order at the given index is part of the bulk signature payload. Powers of two between 2^1 and 2^24 are supported as payload sizes. If a signature is a valid size for bulk signatures, Seaport will attempt to verify it as such, falling back to standard EIP-1271 if it fails.
 - Zone calls now occur after all transfers have occurred and use a single stateful `validateOrder` endpoint and must receive back the correct magic value for restricted orders to be considered valid. See the zone interface and the `ZoneParameters` struct for more details.
 - Contract orders and orders being matched may designate native tokens (e.g. Ether) as offer items, and may pay provide said Ether to Seaport during fulfillment for use by the fulfiller. Any unspent native tokens will be returned to the caller.
-- The `OrderValidated` event now emits the full `OrderParameters` struct as an argument, and a new `OrdersMatched` event is emitted when matching orders. A `recipient is also supplied (or inferred) as an argument when matching orders, and will be reflected in the respective `OrderFulfilled` event — this recipient will receive any unspent offer item amounts after all supplied fulfillments have been applied. Fulfillments will also now skip out-of-range items.
+- The `OrderValidated` event now emits the full `OrderParameters` struct as an argument, and a new `OrdersMatched` event is emitted when matching orders. A `recipient is also supplied (or inferred) as an argument when matching orders, and will be reflected in the respective` OrderFulfilled` event — this recipient will receive any unspent offer item amounts after all supplied fulfillments have been applied. Fulfillments will also now skip out-of-range items.
 - Custom ABI encoding and decoding has been employed, generated by the [abi-lity](https://github.com/d1ll0n/abi-lity) codegen tool, and many other optimizations have been implemented throughout.
 
 For more information on Seaport in general, see the [docs](https://github.com/ProjectOpenSea/seaport/tree/1.2/docs).
 
 ## Scoping Details
+
 ```
 - If you have a public code repo, please share it here: https://github.com/ProjectOpenSea/seaport/tree/seaport-1.2-code4rena-competition
 - How many contracts are in scope?: ~30 core contracts along with a similar # of "reference" contracts
@@ -218,7 +221,11 @@ For a more thorough flowchart see [Seaport diagram](./diagrams/Seaport.drawio.sv
 To install dependencies and compile contracts:
 
 ```bash
-git clone https://github.com/ProjectOpenSea/seaport && cd seaport
+# If you haven't cloned yet
+git clone --recurse-submodules https://github.com/ProjectOpenSea/seaport && cd seaport
+# If you've already cloned but without the submodules
+git submodule update --init && cd seaport
+# Installing and building
 yarn install
 yarn build
 ```
