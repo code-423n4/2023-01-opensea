@@ -38,6 +38,23 @@ The C4audit output for the contest can be found [here](add link to report) withi
 - interaction with non-compliant or malicious ERC20/ERC721/ERC1155 implementations not considered in scope
 - also see Seaport 1.1 out of scope / known limitations section: <https://github.com/code-423n4/2022-05-opensea-seaport#out-of-scope>
 
+## Cloning the repo
+
+Please note that the contest's code is hosted on an external repo. To fetch it, use one of the following methods:
+
+- Cloning using SSH:
+```bash
+git clone --recurse-submodules git@github.com:code-423n4/2023-01-opensea.git
+```
+- Cloning using HTTPS:
+```bash
+git clone --recurse-submodules https://github.com/ProjectOpenSea/seaport
+```
+- Getting the submodules if cloning was done without `--recurse-submodules`:
+```bash
+git submodule update --init
+```
+
 # Overview
 
 Seaport v1.2 builds on Seaport v1.1 in a (mostly) backwards-compatible fashion, but includes a few new features and performs further optimizations on the codebase.
@@ -221,11 +238,6 @@ For a more thorough flowchart see [Seaport diagram](./diagrams/Seaport.drawio.sv
 To install dependencies and compile contracts:
 
 ```bash
-# If you haven't cloned yet
-git clone --recurse-submodules https://github.com/ProjectOpenSea/seaport && cd seaport
-# If you've already cloned but without the submodules
-git submodule update --init && cd seaport
-# Installing and building
 yarn install
 yarn build
 ```
