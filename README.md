@@ -48,7 +48,7 @@ git clone --recurse-submodules git@github.com:code-423n4/2023-01-opensea.git
 ```
 - Cloning using HTTPS:
 ```bash
-git clone --recurse-submodules https://github.com/ProjectOpenSea/seaport
+git clone --recurse-submodules https://github.com/code-423n4/2023-01-opensea.git
 ```
 - Getting the submodules if cloning was done without `--recurse-submodules`:
 ```bash
