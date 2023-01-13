@@ -152,39 +152,9 @@ See the [documentation](https://github.com/ProjectOpenSea/seaport/blob/1.2/docs/
 
 ## Deployments
 
-<table>
-<tr>
-<th>Network</th>
-<th>Seaport 1.1</th>
-<th>ConduitController</th>
-</tr>
-
-<tr><td>Ethereum</td><td rowspan="14">
-
-[0x00000000006c3852cbEf3e08E8dF289169EdE581](https://etherscan.io/address/0x00000000006c3852cbEf3e08E8dF289169EdE581#code)
-
-</td><td rowspan="14">
-
-[0x00000000F9490004C11Cef243f5400493c00Ad63](https://etherscan.io/address/0x00000000F9490004C11Cef243f5400493c00Ad63#code)
-
-</td></tr>
-
-<tr><td>Rinkeby</td></tr>
-<tr><td>Goerli</td></tr>
-<tr><td>Kovan</td></tr>
-<tr><td>Sepolia</td></tr>
-<tr><td>Polygon</td></tr>
-<tr><td>Mumbai</td></tr>
-<tr><td>Optimism</td></tr>
-<tr><td>Optimistic Kovan</td></tr>
-<tr><td>Arbitrum</td></tr>
-<tr><td>Arbitrum Nova</td></tr>
-<tr><td>Arbitrum Rinkeby</td></tr>
-<tr><td>Avalanche Fuji</td></tr>
-<tr><td>Avalanche C-Chain</td></tr>
-<tr><td>Gnosis Chain</td></tr>
-<tr><td>BSC</td></tr>
-</table>
+On Ethereum, Rinkeby, Goerli, Kovan, Sepolia, Polygon, Mumbai, Optimism, OptimisticKovan, Arbitrum, ArbitrumNova, ArbitrumRinkeby, AvalancheFuji, AvalancheC-Chain, GnosisChain, BSC:
+- Seaport 1.1: [0x00000000006c3852cbEf3e08E8dF289169EdE581](https://etherscan.io/address/0x00000000006c3852cbEf3e08E8dF289169EdE581#code)
+- ConduitController: [0x00000000F9490004C11Cef243f5400493c00Ad63](https://etherscan.io/address/0x00000000F9490004C11Cef243f5400493c00Ad63#code)
 
 To be deployed on other EVM chains, such as:
 
