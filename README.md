@@ -139,7 +139,7 @@ Gas optimizations that do not otherwise modify behavior or adversely impact safe
 - test/*
 - contracts/helpers/TransferHelper.sol
 - contracts/helpers/TransferHelperStructs.sol
-- gas optimizations not considered for reference contracts and constructor logic
+- gas optimizations not considered for reference contracts, constructor logic and the conduit controller.
 
 # Additional Context
 
