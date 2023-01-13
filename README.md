@@ -229,8 +229,7 @@ To deploy to a new EVM chain, follow the [steps outlined here](https://github.co
 
 ## Diagram
 
-<img width="1206" alt="image" src="https://user-images.githubusercontent.com/47150934/212416752-7b288570-361b-472f-a448-1bd10d4d8683.png">
-
+![Diagram](https://user-images.githubusercontent.com/47150934/212416752-7b288570-361b-472f-a448-1bd10d4d8683.png)
 
 For a more thorough flowchart see [Seaport diagram](https://github.com/ProjectOpenSea/seaport/blob/1.2/diagrams/Seaport.drawio.svg).
 
