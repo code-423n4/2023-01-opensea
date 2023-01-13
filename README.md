@@ -139,7 +139,8 @@ Gas optimizations that do not otherwise modify behavior or adversely impact safe
 - test/*
 - contracts/helpers/TransferHelper.sol
 - contracts/helpers/TransferHelperStructs.sol
-- gas optimizations not considered for reference contracts, constructor logic and the conduit controller.
+- gas optimizations not considered for reference contracts and constructor logic
+- [known gas optimizations from last contest](https://github.com/code-423n4/2022-05-opensea-seaport-findings/labels/G%20%28Gas%20Optimization%29) which weren't implemented (lots of those concerning the **conduit controller** which is out of scope for gas optimizations due to the code being highly sensitive)
 
 # Additional Context
 
