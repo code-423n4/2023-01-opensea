@@ -169,37 +169,8 @@ To deploy to a new EVM chain, follow the [steps outlined here](https://github.co
 
 ## Diagram
 
-```mermaid
-graph TD
-    Offer & Consideration --> Order
-    zone & conduitKey --> Order
+<img width="1206" alt="image" src="https://user-images.githubusercontent.com/47150934/212416752-7b288570-361b-472f-a448-1bd10d4d8683.png">
 
-    subgraph Seaport[ ]
-    Order --> Fulfill & Match
-    Order --> Validate & Cancel
-    end
-
-    Validate --> Verify
-    Cancel --> OrderStatus
-
-    Fulfill & Match --> OrderCombiner --> OrderFulfiller
-
-    OrderCombiner --> BasicOrderFulfiller --> OrderValidator
-    OrderCombiner --> FulfillmentApplier
-
-    OrderFulfiller --> CriteriaResolution
-    OrderFulfiller --> AmountDeriver
-    OrderFulfiller --> OrderValidator
-
-    OrderValidator --> ZoneInteraction
-    OrderValidator --> Executor --> TokenTransferrer
-    Executor --> Conduit --> TokenTransferrer
-    Executor --> Verify
-
-    subgraph Verifiers[ ]
-    Verify --> Time & Signature & OrderStatus
-    end
-```
 
 For a more thorough flowchart see [Seaport diagram](https://github.com/ProjectOpenSea/seaport/blob/1.2/diagrams/Seaport.drawio.svg).
 
