@@ -72,6 +72,66 @@ Gas optimizations that do not otherwise modify behavior or adversely impact safe
 - contracts/conduit/* (with the assumption that only Seaport v1.2 will be added as a channel)
 - reference/* (only considered for informational issues)
 
+## Scope table
+
+| File                                                              | blank | comment | code  |
+| ----------------------------------------------------------------- | ----- | ------- | ----- |
+| seaport/contracts/helpers/PointerLibraries.sol                    | 337   | 344     | 2412  |
+| seaport/contracts/lib/ConsiderationDecoder.sol                    | 156   | 498     | 650   |
+| seaport/contracts/lib/BasicOrderFulfiller.sol                     | 138   | 407     | 574   |
+| seaport/contracts/lib/OrderValidator.sol                          | 118   | 282     | 506   |
+| seaport/contracts/lib/OrderCombiner.sol                           | 118   | 432     | 499   |
+| seaport/contracts/lib/TokenTransferrer.sol                        | 86    | 269     | 477   |
+| seaport/contracts/lib/ConsiderationConstants.sol                  | 131   | 491     | 428   |
+| seaport/contracts/lib/FulfillmentApplier.sol                      | 92    | 236     | 412   |
+| seaport/contracts/lib/ConsiderationStructs.sol                    | 51    | 111     | 380   |
+| seaport/contracts/lib/Executor.sol                                | 61    | 254     | 345   |
+| seaport/contracts/lib/ConsiderationEncoder.sol                    | 108   | 255     | 332   |
+| seaport/contracts/lib/Consideration.sol                           | 24    | 485     | 269   |
+| seaport/contracts/lib/ConsiderationErrors.sol                     | 75    | 307     | 249   |
+| seaport/contracts/lib/OrderFulfiller.sol                          | 48    | 157     | 213   |
+| seaport/contracts/conduit/ConduitController.sol                   | 70    | 223     | 211   |
+| seaport/contracts/lib/SignatureVerification.sol                   | 41    | 104     | 178   |
+| seaport/contracts/lib/CriteriaResolution.sol                      | 46    | 111     | 161   |
+| seaport/contracts/lib/GettersAndDerivers.sol                      | 64    | 147     | 158   |
+| seaport/contracts/lib/ConsiderationBase.sol                       | 39    | 87      | 154   |
+| seaport/contracts/lib/Verifiers.sol                               | 33    | 103     | 136   |
+| seaport/contracts/lib/ZoneInteraction.sol                         | 23    | 76      | 118   |
+| seaport/contracts/lib/TypehashDirectory.sol                       | 24    | 54      | 105   |
+| seaport/contracts/conduit/Conduit.sol                             | 31    | 119     | 97    |
+| seaport/contracts/interfaces/ConsiderationInterface.sol           | 17    | 347     | 94    |
+| seaport/contracts/interfaces/SeaportInterface.sol                 | 17    | 346     | 94    |
+| seaport/contracts/lib/TokenTransferrerConstants.sol               | 23    | 73      | 94    |
+| seaport/contracts/lib/Assertions.sol                              | 16    | 74      | 86    |
+| seaport/contracts/lib/AmountDeriver.sol                           | 16    | 89      | 78    |
+| seaport/contracts/interfaces/ConduitControllerInterface.sol       | 28    | 197     | 71    |
+| seaport/contracts/lib/LowLevelHelpers.sol                         | 10    | 55      | 58    |
+| seaport/contracts/lib/ConsiderationEnums.sol                      | 43    | 49      | 54    |
+| seaport/contracts/interfaces/ConsiderationEventsAndErrors.sol     | 24    | 140     | 46    |
+| seaport/contracts/interfaces/ContractOffererInterface.sol         | 6     | 2       | 37    |
+| seaport/contracts/interfaces/TransferHelperErrors.sol             | 10    | 44      | 31    |
+| seaport/contracts/lib/CounterManager.sol                          | 13    | 38      | 29    |
+| seaport/contracts/lib/ReentrancyGuard.sol                         | 10    | 40      | 29    |
+| seaport/contracts/interfaces/TokenTransferrerErrors.sol           | 8     | 61      | 28    |
+| seaport/contracts/interfaces/AbridgedTokenInterfaces.sol          | 8     | 1       | 27    |
+| seaport/contracts/interfaces/ConduitInterface.sol                 | 10    | 63      | 23    |
+| seaport/contracts/interfaces/ImmutableCreate2FactoryInterface.sol | 4     | 74      | 18    |
+| seaport/contracts/conduit/lib/ConduitStructs.sol                  | 3     | 1       | 17    |
+| seaport/contracts/Seaport.sol                                     | 4     | 101     | 15    |
+| seaport/contracts/interfaces/CriteriaResolutionErrors.sol         | 8     | 48      | 14    |
+| seaport/contracts/conduit/lib/ConduitConstants.sol                | 2     | 6       | 10    |
+| seaport/contracts/interfaces/FulfillmentApplicationErrors.sol     | 5     | 30      | 10    |
+| seaport/contracts/interfaces/TransferHelperInterface.sol          | 2     | 7       | 10    |
+| seaport/contracts/interfaces/IERC721Receiver.sol                  | 1     | 1       | 9     |
+| seaport/contracts/conduit/lib/ConduitEnums.sol                    | 1     | 1       | 7     |
+| seaport/contracts/interfaces/EIP1271Interface.sol                 | 1     | 1       | 7     |
+| seaport/contracts/interfaces/SignatureVerificationErrors.sol      | 4     | 25      | 7     |
+| seaport/contracts/interfaces/ZoneInterface.sol                    | 2     | 1       | 7     |
+| seaport/contracts/interfaces/ZoneInteractionErrors.sol            | 2     | 22      | 5     |
+| seaport/contracts/interfaces/AmountDerivationErrors.sol           | 1     | 10      | 4     |
+| seaport/contracts/interfaces/ReentrancyErrors.sol                 | 1     | 10      | 4     |
+| SUM:                                                              | 2214  | 7509    | 10087 |
+
 ## Out of scope
 
 - contracts/test/*
