@@ -25,7 +25,7 @@
 - Starts January 13, 2023 20:00 UTC
 - Ends January 23, 2023 20:00 UTC
 
-**IMPORTANT NOTE**: Unlike most public Code4rena contests, prior to receiving payment from this contest you MUST become a Certified Warden (successfully complete KYC). You do not have to complete this process before competing or submitting bugs. **You must have started this process within 48 hours after contest close, i.e. by January 18, 2023 at 20:00 UTC in order to receive payment.**
+**IMPORTANT NOTE**: Unlike most public Code4rena contests, prior to receiving payment from this contest you MUST become a Certified Warden (successfully complete KYC). You do not have to complete this process before competing or submitting bugs. **You must have started this process within 48 hours after contest close, i.e. by January 25, 2023 at 20:00 UTC in order to receive payment.**
 
 ## C4udit / Publicly Known Issues
 
