@@ -14,7 +14,7 @@
 # OpenSea SeaPort contest details
 
 - Total Prize Pool: $100,500 USDC
-  - HM awards: $85,000 USDC
+  - HM awards: $71,500 USDC
   - QA report awards: $8,500 USDC
   - Gas report awards: $5,000 USDC
   - Judge + presort awards: $15,000 USDC
