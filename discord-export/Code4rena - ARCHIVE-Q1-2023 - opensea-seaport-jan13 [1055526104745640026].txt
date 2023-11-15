@@ -1,0 +1,573 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q1-2023 / opensea-seaport-jan13
+==============================================================
+
+[12/23/2022 16:41] ladboy233
+👀
+
+{Reactions}
+angerytableslam (15) 👀 (19) 
+
+[12/25/2022 13:23] decentblock.
+Lets get ready
+
+
+[12/25/2022 14:02] un_for_given
+is this contest going to have assembly code?
+
+{Reactions}
+😂 (10) nice (6) 
+
+[12/26/2022 14:13] .tointer
+Seaport is the pearl of the crypto protocols :chefskiss:
+
+{Reactions}
+chefskiss (4) 
+
+[12/26/2022 14:53] codingnamekiki
+:pepegang:
+
+
+[12/26/2022 15:59] chaduke3730
+great. let's all get ready for the new year
+
+{Reactions}
+hi5 (2) 
+
+[12/26/2022 19:38] kartoonjoy
+Hi All 👋! Let's please limit conversation from this point. Hope everyone has a happy new year!
+
+{Reactions}
+hi5 (14) 
+
+[01/03/2023 16:29] paroxysm9999 (pinned)
+👋 Hello and welcome to the contest channel for the $100,500 **OpenSea Seaport 1.2** contest!
+
+📆 Contest opens 01/13/2023 20:00 (20:00 UTC) and runs through 01/23/2023 20:00 (20:00 UTC) (10 days).
+
+Please give a warm welcome to the OpenSea team, particularly @probe, @0age & @kartik who will be available for questions either here in the channel or via DM.
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this contest, consider enabling notifications for this channel. 🐺 ⏰ 
+
+**IMPORTANT NOTE**: Unlike most public Code4rena contests, prior to receiving payment from this contest you MUST become a Certified Warden (successfully complete KYC).
+
+{Reactions}
+❤️ (12) 
+
+[01/03/2023 16:39] itsmetechjay
+Pinned a message.
+
+
+[01/04/2023 21:41] itsmetechjay
+An update: this contest will start on Friday, 13 January 2023 20:00.
+
+{Reactions}
+👍 (2) 
+
+[01/04/2023 21:43] Franfran#5067
+Could you please make the change on the frontend ? 🙂
+
+{Reactions}
+👍 (3) 
+
+[01/04/2023 21:44] itsmetechjay
+Working on it
+
+{Reactions}
+👍 
+
+[01/13/2023 20:02] 0age
+Hey everyone! 👋
+
+
+[01/13/2023 20:03] 0age
+Around to answer questions during the competition!
+
+
+[01/13/2023 20:11] thepicodes (pinned)
+**Automated findings:** https://gist.github.com/Picodes/0c95916a51da4d17d0dac153a3de1cb4
+
+{Reactions}
+❤️ 🤍 
+
+[01/13/2023 20:15] kartoonjoy (pinned)
+Wardens, please note that the automated findings output has been posted and added to pinned posts. These are considered publicly known issues and are not eligible for awards.
+
+**Automated findings:** https://gist.github.com/Picodes/0c95916a51da4d17d0dac153a3de1cb4
+
+{Embed}
+https://gist.github.com/Picodes/0c95916a51da4d17d0dac153a3de1cb4
+4naly3er-2023-01-opensea.md
+GitHub Gist: instantly share code, notes, and snippets.
+Code4rena - ARCHIVE-Q1-2023 - opensea-seaport-jan13 [1055526104745640026].txt_Files/gist-og-image-17482.png
+
+
+[01/13/2023 20:15] kartoonjoy
+Pinned a message.
+
+
+[01/13/2023 20:15] kartoonjoy
+Pinned a message.
+
+
+[01/13/2023 22:07] 0age (pinned)
+Hey wardens - something we meant to include in the README but forgot to mention is that **we are not interested in gas opts for the conduit controller.** 
+
+During our last contest we received a lot of them — we actually didn't implement any because the code is highly sensitive and not executed frequently, so readability and comprehension is the top priority.
+
+As a reminder, this same logic (no gas optimizations where they damage readability, eg assembly) applies to the reference contracts and constructor logic (and, for the love of all that is good, test contracts). Submissions against any in-scope contract are always welcome if they improve readability and comprehension without sacrificing on safety or (in the core Seaport contract) efficiency.
+
+{Reactions}
+👍 (9) 
+
+[01/13/2023 22:36] kartoonjoy
+Pinned a message.
+
+
+[01/16/2023 02:44] _t1nt1n
+hey @0age , just taking a first read through the repo, from the changelog vs. Seaport 1.1 I saw that offers including native ETH can be fufilled, will this enable ERC721 -> ETH? iirc this basic order path is not possible on current Seaport
+
+
+[01/16/2023 03:00] 0age
+Why yes indeed it will — contract orders can provide native tokens (eg ETH) as offer items and transfer the associated native tokens to Seaport as part of the generateOrder call
+
+{Reactions}
+👍 
+
+[01/16/2023 03:06] 0age
+You can imagine a contract offerer that takes WETH and provides ETH (or vice versa), wrapping and unwrapping as needed, and called alongside a listing or offer being accepted using eg matchOrders
+
+
+[01/16/2023 13:29] supernovahs
+What's the most effective way to know the diff in 1.1 and 1.2 in github  easily to compare?
+
+
+[01/16/2023 18:10] 0age
+Here's the full diff: https://github.com/ProjectOpenSea/seaport/pull/882/files?diff=split&w=1
+
+{Embed}
+https://github.com/ProjectOpenSea/seaport/pull/882/files?diff=split&w=1
+Seaport 1.2 code4rena competition revised by 0age · Pull Request #8...
+This draft PR highlights changes between Seaport 1.1 and 1.2 headed into the code4rena competition, and is not meant to be merged.
+Code4rena - ARCHIVE-Q1-2023 - opensea-seaport-jan13 [1055526104745640026].txt_Files/37939117-935E5
+
+{Reactions}
+👍 🔥 thankyou 
+
+[01/16/2023 18:11] 0age
+(you'll likely want to hone in on `contracts/lib/*` and `reference/lib/*`)
+
+
+[01/18/2023 03:24] Jonathan#4335
+It says "You must have started this process within 48 hours after contest close, i.e. by January 18, 2023 at 20:00 UTC", but the contest ends on January 23
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - opensea-seaport-jan13 [1055526104745640026].txt_Files/Screenshot_from_2023-01-18_10-23-27-071D0.png
+
+{Reactions}
+🇭 (2) ohno 🙈 
+
+[01/18/2023 21:55] dewaxindo
+Hello,
+`"OpenSea engaged Trail of Bits to audit the security of Seaport. From April 18th to May 12th 2022, a team of Trail of Bits consultants conducted a security review of Seaport. The audit did not uncover significant flaws that could result in the compromise of a smart contract, loss of funds, or unexpected behavior in the target system."`
+
+
+[01/18/2023 21:56] dewaxindo
+So it means it is unlikely wardens can find high or medium bugs? 🤔
+
+
+[01/18/2023 21:57] itsmetechjay
+This has been updated in the README to be by January 25, 2023 at 20:00 UTC. It'll show on the contest page soon.
+
+{Reactions}
+👍 
+
+[01/18/2023 22:47] 0age
+This particular audit was for Seaport 1.0; the last seaport c4 still had both high and medium-severity findings (and there’s a good deal of brand new code as well!)
+
+
+[01/18/2023 22:48] dewaxindo
+Thanks for clarifying
+
+
+[01/19/2023 20:05] chaduke3730
+Is this open for all? (not only certified) (not sure as I have the impression of the later by reading from somewhere)
+
+
+[01/19/2023 20:09] itsmetechjay
+This is open for everyone but you need to be certified to receive awards.
+
+
+[01/19/2023 22:44] road220
+Why total prize pool is $100,500? I wonder how it's computed...
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - opensea-seaport-jan13 [1055526104745640026].txt_Files/image-D26B8.png
+
+
+[01/19/2023 22:45] road220
+if it doesn't include judge + scout awards, where is 2k?
+
+
+[01/19/2023 22:50] itsmetechjay
+HM should actually be $71,500 - copy/paste error on our part.
+
+{Reactions}
+💯 (2) 😱 nice 
+
+[01/20/2023 09:12] supernovahs
+Where is the full code of ContractOffererInterface?
+
+
+[01/20/2023 09:30] supernovahs
+Also , what's the use case for CONTRACT order type ?
+
+
+[01/20/2023 14:26] Hama#9496
+What do you mean by certified?
+
+
+[01/20/2023 15:18] cloudellie
+https://docs.code4rena.com/roles/certified-contributors
+
+{Embed}
+https://docs.code4rena.com/roles/certified-contributors
+Certified contributors
+In order to create opportunities for contributions which rely on establishment of trust, Code4rena allows community members to opt into certifying their identity and entering into a simple agreement.
+
+
+[01/20/2023 16:33] 0age
+You can find the code for interacting with contract offerers in OrderValidator, see _getGeneratedOrder
+
+
+[01/20/2023 16:37] 0age
+If you want to plug on-chain liquidity into Seaport you can use a contract order, where the offerer is a contract that implements the ContractOffererInterface and approves Seaport or a conduit; then, contract offerers just return orders that meet their own requirements, without requiring a signature or anything. You could imagine liquidation engines for NFT lending, pool contracts like Sudoswap, oracle-based "strategies" that will buy and sell NFTs based on the current floor price, contracts for wrapping and unwrapping ETH, etc.
+
+{Reactions}
+👍 
+
+[01/21/2023 13:19] mehul0011
+Hey can you elaborate what are automated findings
+
+
+[01/21/2023 13:22] mehul0011
+How to become certified, are not all wardens certified by default.
+
+
+[01/21/2023 18:23] simonpure
+https://docs.code4rena.com/roles/certified-contributors
+
+{Embed}
+https://docs.code4rena.com/roles/certified-contributors
+Certified contributors
+In order to create opportunities for contributions which rely on establishment of trust, Code4rena allows community members to opt into certifying their identity and entering into a simple agreement.
+
+{Reactions}
+thankyou 
+
+[01/23/2023 16:03] cloudellie
+https://docs.code4rena.com/roles/wardens/submission-policy#automated-findings-ineligible
+
+{Embed}
+https://docs.code4rena.com/roles/wardens/submission-policy
+Submission policy
+
+
+[01/23/2023 18:56] acegawd
+Dmed you @0age
+
+
+[01/23/2023 20:02] C4
+**🚨 CONTEST ALERT**
+
+@🐺wardens The **USDC OpenSea Seaport 1.2** contest is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks. Keep an eye on #📢announcements for regular updates on how the contest is progressing through awarding 🤑🏆, judging 🧑‍⚖️ and reporting 📜. Feel free to ping a gardener if you have questions along the way!
+
+{Reactions}
+🚀 (15) 💸 (4) 
+
+[01/23/2023 21:03] horsefacts
+gg! very cool stuff in this release, especially the abi-lity libraries. I consider it a win if I come out of a Seaport contest understanding 50% of what I just read.  😅
+
+{Reactions}
+hi5 (14) 
+
+[01/23/2023 21:47] chaduke3730
+assembly language is the charm here
+
+
+[01/23/2023 21:48] chaduke3730
+😎
+
+{Reactions}
+😎 (6) 
+
+[01/25/2023 12:44] ladboy233
+crazy contest like zkSync😂
+
+{Reactions}
+👀 (7) 
+
+[01/25/2023 13:32] codingnamekiki
+:PU_HyperOmega:
+
+
+[01/25/2023 14:41] lukejohn_
+Curious about the result
+
+
+[01/25/2023 16:14] chaduke3730
+might have crazy results
+
+
+[01/25/2023 16:15] chaduke3730
+😂
+
+
+[02/02/2023 20:43] 0age
+https://twitter.com/z0age/status/1621239991983816704
+
+{Embed}
+0age (@z0age)
+https://twitter.com/z0age/status/1621239991983816704
+The Seaport version 1.2 contract is now deployed to many EVM chains! 
+
+0x00000000000006c7676171937C444f6BDe3D6282
+
+The current Seaport contract (v1.1) is still usable & will be as long as whatever chain it's on keeps chugging; v1.2 is a new contract
+
+So, what's v1.2 all about? ⤵️
+Twitter
+
+{Reactions}
+chefskiss (7) 
+
+[02/03/2023 23:14] abuzay#1524
+Any update ?
+
+
+[02/07/2023 12:38] supernovahs
+To create a listing on chain , we have to call  the `validate` function right?
+
+
+[02/09/2023 14:51] itsmetechjay
+:C4Keycap:  💸 🎉 Awards for **Opensea SeaPort**:
+
+$71,500.00 USDC » @0xsomeone ⚠️ 
+$2,757.95 USDC » @IllIllI 
+$2,016.89 USDC » @horsefacts 
+$1,568.44 USDC » @Dravee 
+$1,551.45 USDC » @ABA 
+$1,551.45 USDC » @brgltd 
+$1,347.17 USDC » @RaymondFam 
+$310.43 USDC » @Rolezn 
+$310.43 USDC » @0xSmartContract  
+$169.76 USDC » @saneryee 
+$169.76 USDC » @karanctf 
+$169.76 USDC » @c3phas 
+$169.76 USDC » @atharvasama ⚠️ 
+$140.67 USDC » @thinklab 
+$140.67 USDC » @btk  
+$140.67 USDC » @larsson ⚠️ 
+$140.67 USDC » @chaduke 
+$140.67 USDC » @csanuragjain 
+$140.67 USDC » @nadin ⚠️ 
+$140.67 USDC » @Charles 
+$140.67 USDC » @Chom 
+$140.67 USDC » @Josiah 
+$140.67 USDC » @delfin454000
+
+🏁 Findings summary
+---------------------------
+High risk findings: 0 total
+Med risk findings: 1 total, 1 unique
+Gas reports: 9 
+QA reports: 17 
+
+⚠️ If this symbol appears next to your username, your awards will not be sent until you complete the certification process. If you need assistance completing certification, please submit a Help Desk request.
+
+Congratulations, everyone! 💸 💸 💸
+
+*If you participated in this contest and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.*
+
+{Reactions}
+🔥 (7) 
+
+[02/09/2023 14:54] 0xsomeone
+Wow this reward is incredible, I am glad my finding was identified as valid and rewarded!
+
+{Reactions}
+🎉 (37) Clap (22) 💜 (9) hi5 (7) 🔥 (5) 
+
+[02/09/2023 14:54] csanuragjain
+Congrats @0xsomeone
+
+{Reactions}
+🙏 
+
+[02/09/2023 14:55] matin6517
+Well played dude🥳🥳🥳
+
+{Reactions}
+🙏 
+
+[02/09/2023 14:55] pfapostol
+KYC-only contests seem very out of balance 😀
+
+
+[02/09/2023 14:57] codingnamekiki
+:PU_HyperOmega:
+
+
+[02/09/2023 15:05] chaduke3730
+I had that "someone" dream when I participated, I still have the dream - someone, someday
+
+
+[02/09/2023 15:05] chaduke3730
+@0xsomeone you are somebody now!
+
+{Reactions}
+🔥 (8) 😂 (10) 
+
+[02/09/2023 15:10] ahmet5611
+I can't wait to see whats the issue u found 👌
+
+{Reactions}
+🙏 (5) 
+
+[02/09/2023 15:15] ladboy233
+Miracle!!!!
+
+
+[02/09/2023 15:36] praise95
+@0xsomeone congrats 🔥
+
+{Reactions}
+🙏 
+
+[02/09/2023 15:36] Franfran#5067
+Got the very only medium, such a nice play congrats!
+
+{Reactions}
+🙏 
+
+[02/09/2023 15:39] 0x4non
+Congratulations to the Chad  @0xsomeone
+
+{Reactions}
+🙏 
+
+[02/09/2023 15:44] aba1842
+wow, like wow! this was my first audit ever, and after 16h of grinding on the codebase and learning Yul on the fly was a bit depressed with what I found. I was expecting like $50. Congrats to everybody who won and, for those who didn't: Seaport will come back with an audit in the future, like they came now, what we all learned now will surely help in the future!
+
+{Reactions}
+hi5 (8) 🎉 (5) 👏 Clap 
+
+[02/09/2023 15:45] cloudellie
+Hey, congratulations ABA!
+
+
+[02/09/2023 15:47] aba1842
+thanks man!
+
+{Reactions}
+hi5 
+
+[02/09/2023 16:01] nadin4559
+Congrats everyone
+
+
+[02/09/2023 16:02] nadin4559
+@CloudEllie Can I DM you for help with KYC?
+
+
+[02/09/2023 16:05] golanger
+Congrats ser
+
+{Reactions}
+🙏 
+
+[02/09/2023 16:27] cloudellie
+just sent you a friend request
+
+{Reactions}
+hi5 
+
+[02/09/2023 16:28] matin6517
+I have a question about KYC either
+
+
+[02/09/2023 16:29] cloudellie
+You can submit a help desk request or ask in #❓questions
+
+
+[02/09/2023 16:30] cloudellie
+Also worth checking the docs first to see if your question is answered there: https://docs.code4rena.com/roles/certified-contributors#certification-process-and-constraints
+
+{Embed}
+https://docs.code4rena.com/roles/certified-contributors
+Certified contributors
+In order to create opportunities for contributions which rely on establishment of trust, Code4rena allows community members to opt into certifying their identity and entering into a simple agreement.
+
+{Reactions}
+hi5 
+
+[02/09/2023 16:31] matin6517
+Oh, thank you 🙏
+
+{Reactions}
+hi5 
+
+[02/09/2023 16:39] sockdrawermoney
+@0xsomeone congrats. That’s a pretty nice “welcome back to C4” for an OG 🙂
+
+{Reactions}
+👀 (2) 💯 (3) 🙏 
+
+[02/09/2023 16:50] ariaworkshop
+Congratulations !
+
+
+[02/09/2023 17:16] 0xsomeone
+Definitely exceeded expectations, hoping for more to come 🙂
+
+{Reactions}
+💜 (5) 
+
+[02/09/2023 19:22] Aramas#0972
+@0xsomeone sent you a DM with a quick question 🙂 huge congrats!!
+
+{Reactions}
+👍 
+
+[02/10/2023 05:04] kartika___
+@0xsomeone Congratulations on finding the vulnerability and winning the competition! Your hard work and dedication have paid off. Keep up the great work!
+
+{Reactions}
+🙏 
+
+[02/14/2023 10:24] rickardlarsson6
+My first payment! Damn, so excited ❤️‍🔥
+
+{Reactions}
+🎉 (8) 
+
+[02/15/2023 01:29] chaduke3730
+@larssonspent it today! buy sth u like, congrats!
+
+
+[02/15/2023 06:34] rickardlarsson6
+Thanks bro! Congrats to you as well 🫡
+
+
+[03/04/2023 02:28] codeislight
+@0age can i dm you? i would love to share my thoughts on something
+
+{Reactions}
+💯 
+
+==============================================================
+Exported 93 message(s)
+==============================================================
